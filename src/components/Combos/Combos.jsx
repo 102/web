@@ -139,7 +139,7 @@ class Combos extends React.Component {
     strings: PropTypes.shape({}),
   };
 
-  parsedUrlQuery = querystring.parse(window.location.search.substring(1)); // eslint-disable-line react/sort-comp
+  parsedUrlQuery = querystring.parse(window.location.search.substring(1));
 
   state = {
     queryType: this.parsedUrlQuery.queryType || 'public',
